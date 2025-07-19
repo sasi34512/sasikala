@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nagendra Vayileti | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet" />
+<style>
+body { margin: 0; font-family: 'Rajdhani', sans-serif; background: #000; color: #fff; scroll-behavior: smooth; position: relative; }
+header, section, footer { max-width: 1000px; margin: auto; padding: 60px 20px; text-align: center; position: relative; z-index: 1; }
+header { height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(135deg, #000, #1a0000); }
+img.profile-pic { width: 280px; height: 280px; border-radius: 20px; border: 4px solid #ff1c1c; object-fit: cover; box-shadow: 0 0 30px #ff1c1c; animation: float 4s ease-in-out infinite; }
+h1 { font-family: 'Orbitron', sans-serif; font-size: 48px; background: linear-gradient(90deg, #ff1c1c, #ff4d4d); -webkit-background-clip: text; color: transparent; animation: flicker 2s infinite alternate; text-transform: uppercase; letter-spacing: 2px; }
+h2 { font-size: 28px; color: #ff4d4d; text-transform: uppercase; margin: 20px 0; }
+p { max-width: 700px; margin: 15px auto; color: #ccc; font-size: 18px; line-height: 1.6; }
+.btn { background: transparent; border: 2px solid #ff1c1c; color: #ff1c1c; padding: 12px 24px; border-radius: 40px; text-decoration: none; font-weight: 600; transition: 0.3s; display: inline-block; margin: 8px; }
+.btn:hover { background: #ff1c1c; color: #000; transform: scale(1.05); }
+.card { background: rgba(255,0,0,0.05); padding: 20px; margin: 20px auto; border-radius: 12px; max-width: 700px; }
+input, select, textarea { width: 90%; max-width: 400px; padding: 12px; margin: 10px auto; display: block; border-radius: 8px; border: 2px solid #ff1c1c; background: #111; color: #fff; font-size: 16px; }
+footer { text-align: center; padding: 20px; color: #555; font-size: 14px; }
+#contact { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; align-items: center; flex-direction: row; }
+#contact p, #contact a { margin: 0; font-size: 18px; color: #ccc; }
+#contact a { color: #ff4d4d; text-decoration: none; }
+#contact a:hover { text-decoration: underline; }
+@keyframes flicker { 0%, 100% {opacity: 1;} 50% {opacity: 0.4;} }
+@keyframes float { 0% { transform: translateY(0); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0); } }
+#background-animation { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; overflow: hidden; pointer-events: none; }
+#background-animation canvas { display: block; }
+</style>
+</head>
+<body>
+<div id="background-animation"></div>
+<header>
+<img src="profile.jpg" alt="Nagendra Vayileti" class="profile-pic">
+<h1>Nagendra Vayileti</h1>
+<h2>Data Analyst & MIS Executive</h2>
+<p>Bachelor's in Hotel Management turned Data Analyst, transforming raw data into actionable insights using Advanced Excel, SQL, Power BI, and Automation tools.</p>
+<div>
+<a href="http://www.linkedin.com/in/nagendra-vayileti" class="btn" target="_blank">LinkedIn</a>
+<a href="https://www.instagram.com/its_sasikala" class="btn" target="_blank">Instagram</a>
+<a href="VAYILETI NAGENDRA. RESUME01.pdf" class="btn" download>Download Resume</a>
+<a href="#collaborate" class="btn">Collaborate</a>
+</div>
+</header>
+<section id="about">
+<h2>About Me</h2>
+<p>I am a detail-oriented Data Analyst who transitioned from Hotel Management to data-driven business reporting. I specialize in creating dashboards, automating reports, and building clear data visualizations that help businesses make informed decisions efficiently.</p>
+</section>
+<section id="courses">
+<h2>Courses & Certifications</h2>
+<div class="card">Microsoft Excel Specialist - Advanced Formulas, Power Query, Dashboard Building</div>
+<div class="card">SQL Reporting and Querying - Excelytics Institute</div>
+<div class="card">Power BI Dashboard Development - Excelytics Institute</div>
+<div class="card">VBA Macros Automation - Excelytics Institute</div>
+</section>
+<section id="skills">
+<h2>Skills</h2>
+<div class="card">Advanced Excel | SQL | Power BI | VBA Macros | ETL Tools | Dashboard Automation</div>
+</section>
+<section id="projects">
+<h2>Projects</h2>
+<div class="card"><strong>Vrinda Stores Sales Dashboard:</strong> Created Excel dashboards visualizing sales trends and customer segments, increasing sales efficiency by 25%.</div>
+<div class="card"><strong>Sai Sri Laboratory Data Automation:</strong> Developed automated Excel and Power BI dashboards reducing manual errors and enabling actionable lab insights.</div>
+<div class="card"><strong>Inventory Management System:</strong> Built Excel-based inventory tracking systems with real-time stock alerts for seamless workflow.</div>
+<div class="card"><strong>Regional Sales Analysis:</strong> Designed Power BI dashboards for regional sales trends supporting data-driven decisions.</div>
+</section>
+<section id="collaborate">
+<h2>Collaborate with Me</h2>
+<p>Interested in working together on data analytics, dashboard development, or reporting automation projects? Submit your details below, and I will connect with you shortly.</p>
+<form action="mailto:skla5585@gmail.com" method="post" enctype="text/plain">
+<input type="text" name="Name" placeholder="Your Name" required>
+<input type="text" name="Contact" placeholder="Your Contact Number" required>
+<input type="email" name="Email" placeholder="Your Email" required>
+<select name="Purpose" required>
+<option value="">Purpose to Reach</option>
+<option value="Project Collaboration">Project Collaboration</option>
+<option value="Dashboard Development">Dashboard Development</option>
+<option value="Consultation Request">Consultation Request</option>
+<option value="Training Request">Training Request</option>
+<option value="Other">Other</option>
+</select>
+<textarea name="Message" rows="4" placeholder="Describe your project or needs"></textarea>
+<button type="submit" class="btn">Submit Collaboration Request</button>
+</form>
+</section>
+<section id="contact">
+<h2>Contact</h2>
+<p>📞 6301906227</p>
+<p>📧 skla5585@gmail.com</p>
+<p>🌐 <a href="http://www.linkedin.com/in/nagendra-vayileti" target="_blank" style="color:#ff4d4d;">LinkedIn Profile</a></p>
+<p>📸 <a href="https://www.instagram.com/its_sasikala" target="_blank" style="color:#ff4d4d;">Instagram Profile</a></p>
+</section>
+<footer>
+&copy; 2025 Nagendra Vayileti | Portfolio crafted for professional presence.
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+<script>
+tsParticles.load("background-animation", { "particles": { "number": { "value": 80 }, "color": { "value": "#ff1c1c" }, "shape": { "type": "circle" }, "opacity": { "value": 0.5 }, "size": { "value": 2 }, "move": { "enable": true, "speed": 0.5 } }, "interactivity": { "events": { "onhover": { "enable": true, "mode": "repulse" } } }, "background": { "color": "#000000" } });
+</script>
+</body>
+</html>
